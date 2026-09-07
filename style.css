@@ -1,0 +1,39 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(
+    180deg,
+    #fff2f4 0%,
+    #ffe3e7 35%,
+    #ffffff 70%,
+    #fff2f4 100%
+  );
+}
+
+.font-serif-luxury {
+  font-family: "Playfair Display", serif;
+}
+
+.pink-glass {
+  background: rgba(255, 242, 244, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(243, 178, 188, 0.35);
+}
+
+.hover-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #e08594;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-line:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
